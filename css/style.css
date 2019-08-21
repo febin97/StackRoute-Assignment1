@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body{
 	background: #000;
 	color: white;
@@ -12,7 +15,7 @@ nav ul li{
 }
 nav ul li a{
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 18px;
 	color: white;
 
 }
@@ -46,7 +49,6 @@ footer{
 }
 .threecol img{
 	height: 270px;
-	width: 270px;
 	padding-top: 10px;
 }
 .threecol div h3{
@@ -56,11 +58,18 @@ footer{
 	text-align: center;
 }
 .col22 img {
-	width: 480px;
+	width: 100%;
+	max-width: 100%;
 	padding-top: 5px; 
 	-webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
   filter: blur(1px);
 }
 footer i{
 	padding-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero{
+  width: 100%;
+}
 }
